@@ -11,11 +11,22 @@ public class p16_equalNumbers {
         double b = Double.parseDouble(scanner.nextLine());
         double c = Double.parseDouble(scanner.nextLine());
 
-        if(a == b && b==c && a==c){
-            System.out.println("yes");
-        }else {
-            System.out.println("no");
+//        if(a == b && b==c && a==c){
+//            System.out.println("yes");
+//        }else {
+//            System.out.println("no");
+//        }
+
+        boolean test = false;
+
+        if (a == b && a == c){
+            test = true;
         }
 
+        if(test){
+            System.out.println("yes");
+        }else{
+            System.out.println("no");
+        }
     }
 }

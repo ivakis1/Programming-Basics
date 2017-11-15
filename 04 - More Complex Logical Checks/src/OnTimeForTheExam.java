@@ -12,18 +12,18 @@ public class OnTimeForTheExam {
         int arrivalHour = Integer.parseInt(scanner.nextLine());
         int arrivalMin = Integer.parseInt(scanner.nextLine());
 
-        int examTime = examHour * 60 + examMin;
-        int arrivalTime = arrivalHour * 60 + arrivalMin;
+        int examTimeInMin = examHour * 60 + examMin;
+        int arrivalTimeMin = arrivalHour * 60 + arrivalMin;
 
-        int timeDiff = examTime - arrivalTime;
+        int timeDiff = examTimeInMin - arrivalTimeMin;
 
         if (timeDiff < 0) {
             System.out.println("Late");
             int hours = Math.abs(timeDiff) / 60;
-            int mins = Math.abs(timeDiff) - hours * 60;
+            int mins = Math.abs(timeDiff) - hours * 60; // timeDiff % 60;
 
             if (hours > 0) {
-                System.out.printf("%d:%02d hours after the start", hours, mins);
+                System.out.printf("%d:%d hours after the start", hours, mins);
             } else {
                 System.out.printf("%d minutes after the start", mins);
             }

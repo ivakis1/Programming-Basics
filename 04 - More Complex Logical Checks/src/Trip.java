@@ -18,7 +18,7 @@ public class Trip {
                 budget = budget * 0.70;
                 System.out.printf("Somewhere in Bulgaria %nHotel - %.2f", budget);
             }
-        }if ( budget > 100 && budget <= 1000){
+        }else if (budget <= 1000){
             if (season.equals("summer")){
                 budget = budget * 0.40;
                 System.out.printf("Somewhere in Balkans %nCamp - %.2f",budget);
@@ -26,7 +26,7 @@ public class Trip {
                 budget = budget * 0.80;
                 System.out.printf("Somewhere in Balkans %nHotel - %.2f",budget);
             }
-        }if (budget > 1000){
+        }else if (budget > 1000){
             budget = budget * 0.90;
             System.out.printf("Somewhere in Europe %nHotel - %.2f", budget);
         }

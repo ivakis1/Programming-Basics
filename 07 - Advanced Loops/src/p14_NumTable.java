@@ -1,8 +1,5 @@
 import java.util.Scanner;
 
-/**
- * Created by User on 19.4.2017 г..
- */
 public class p14_NumTable {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -12,14 +9,14 @@ public class p14_NumTable {
         int currN = 0;
         int step = 1;
 
-        for (int r = 1; r <= n ; r++) {
+        for (int r = 1; r <= n; r++) {
             currN = r;
             step = 1;
-            for (int c = 0; c < n ; c++) {
+            for (int c = 0; c < n; c++) {
 
                 System.out.printf("%d ", currN);
 
-                if (currN >= n){
+                if (currN >= n) {
                     step = -1;
                 }
                 currN = currN + step;
@@ -28,3 +25,4 @@ public class p14_NumTable {
         }
     }
 }
+

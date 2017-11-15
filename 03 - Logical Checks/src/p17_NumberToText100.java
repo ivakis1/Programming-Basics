@@ -13,8 +13,6 @@ public class p17_NumberToText100 {
             System.out.println("zero");
         }else if (num == 1){
             System.out.println("one");
-        }else if (num == 1){
-            System.out.println("one");
         }else if (num == 2){
             System.out.println("two");
         }else if (num == 3){

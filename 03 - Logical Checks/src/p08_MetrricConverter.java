@@ -9,9 +9,9 @@ public class p08_MetrricConverter {
         Scanner scanner = new Scanner(System.in);
 
         double Value = Double.parseDouble(scanner.nextLine());
+
         String inputMetric = scanner.nextLine().toLowerCase();
         String outputMetric = scanner.nextLine().toLowerCase();
-
 
 
         if (inputMetric.equals("mm")){
@@ -45,10 +45,12 @@ public class p08_MetrricConverter {
         }else if (outputMetric.equals("yd")){
             Value = Value * 1.0936133;
         }
-        DecimalFormat format = new DecimalFormat("#.###############");
 
-        System.out.printf(format.format(Value)+ " " + outputMetric);
+//        DecimalFormat format = new DecimalFormat("#.###############");
+//
+//        System.out.printf(format.format(Value)+ " " + outputMetric);
 
+        System.out.printf("%.8f %s", Value, outputMetric);
 
     }
 }

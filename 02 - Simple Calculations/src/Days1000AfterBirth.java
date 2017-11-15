@@ -16,6 +16,7 @@ public class Days1000AfterBirth {
         LocalDate parsedDate = LocalDate.parse(date, formatter);
 
         parsedDate = parsedDate.plusDays(999);
+
         System.out.println(parsedDate.format(formatter));
 
 

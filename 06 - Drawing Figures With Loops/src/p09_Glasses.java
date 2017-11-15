@@ -1,8 +1,5 @@
 import java.util.Scanner;
 
-/**
- * Created by User on 8.4.2017 г..
- */
 public class p09_Glasses {
     public static void main(String[] args) {
 
@@ -10,31 +7,40 @@ public class p09_Glasses {
 
         int n = Integer.parseInt(scanner.nextLine());
 
-        String firstAndLastRow = repeatStr("*", 2*n)
-                + repeatStr(" ", n) + repeatStr("*", 2*n);
-        System.out.println( firstAndLastRow);
+        String firstAndLastRow = repeatStr("*", 2 * n)
+                + repeatStr(" ", n)
+                + repeatStr("*", 2 * n);
 
-        for (int i = 0; i < n - 2 ; i++) {
+        System.out.println(firstAndLastRow);
 
-            if ( (n - 1) / 2 - 1 == i){
-                String middlePart = "*" + repeatStr("/", 2 * n - 2)
-                        + "*"+ repeatStr("|", n) +  "*" + repeatStr("/", 2 * n - 2)+ "*";
+        for (int i = 0; i < n - 2; i++) {
+
+            if ((n - 1) / 2 - 1 == i) {
+                String middlePart = "*"
+                        + repeatStr("/", 2 * n - 2)
+                        + "*" + repeatStr("|", n)
+                        + "*" + repeatStr("/", 2 * n - 2)
+                        + "*";
+
                 System.out.println(middlePart);
-            }else{
-                String middlePart = "*" + repeatStr("/", 2 * n - 2) + "*"+ repeatStr(" ", n)
-                        +  "*" + repeatStr("/", 2 * n - 2)+ "*";
+            } else {
+                String middlePart = "*"
+                        + repeatStr("/", 2 * n - 2)
+                        + "*" + repeatStr(" ", n)
+                        + "*" + repeatStr("/", 2 * n - 2)
+                        + "*";
+
                 System.out.println(middlePart);
             }
-
-
         }
         System.out.println(firstAndLastRow);
 
 
     }
-    static String repeatStr(String strToRepeat, int count){
+
+    static String repeatStr(String strToRepeat, int count) {
         String text = "";
-        for (int i = 0; i < count ; i++) {
+        for (int i = 0; i < count; i++) {
             text += strToRepeat;
 
         }

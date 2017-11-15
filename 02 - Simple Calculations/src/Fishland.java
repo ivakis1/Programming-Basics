@@ -8,6 +8,8 @@ public class Fishland {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
+
+
         double SkumriaCenaKG = Double.parseDouble(scan.nextLine());
         double CacaCenaKG = Double.parseDouble(scan.nextLine());
         double PalamudKG = Double.parseDouble(scan.nextLine());
@@ -22,8 +24,5 @@ public class Fishland {
 
         System.out.printf("%.2f", CostFish);
 
-
     }
-
-
 }

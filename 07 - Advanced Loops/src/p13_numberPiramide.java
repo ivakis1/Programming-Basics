@@ -10,8 +10,8 @@ public class p13_numberPiramide {
         int n = Integer.parseInt(scanner.nextLine());
         int count = 1;
 
-        for (int r = 1; n >= count; r++) {
-            for (int c = 1; c <= r; c++) {
+        for (int row = 1; n >= count; row++) {
+            for (int col = 1; col <= row; col++) {
                 System.out.print(count + " ");
                 count++;
                 if (count > n) {
@@ -20,9 +20,6 @@ public class p13_numberPiramide {
 
             }
             System.out.println();
-//            if (count > n) {
-//                break;
-//            }
         }
     }
 }

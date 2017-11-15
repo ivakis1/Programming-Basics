@@ -15,18 +15,18 @@ public class p12_EqualPairs {
             int num1 = Integer.parseInt(scanner.nextLine());
             int num2 = Integer.parseInt(scanner.nextLine());
 
-            int currentSum = num1+num2;
+            int currentSum = num1 + num2;
             int currentDiff = Math.abs(currentSum - lastSum);
 
-            if (i>0 && maxDiff<currentDiff){
+            if (i > 0 && maxDiff < currentDiff) {
                 maxDiff = currentDiff;
             }
             lastSum = currentSum;
         }
 
-        if (maxDiff == 0){
+        if (maxDiff == 0) {
             System.out.printf("Yes, value=%d", lastSum);
-        }else {
+        } else {
             System.out.printf("No, maxdiff=%d", maxDiff);
         }
 

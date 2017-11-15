@@ -1,9 +1,6 @@
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-/**
- * Created by User on 2.4.2017 г..
- */
 public class p11_OddEvenPossition {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
